@@ -1,0 +1,62 @@
+# locales/en-US.yaml
+# ezcord-style: keys are organised by cog/file → command/method → string-key
+# You may also use flat dot-notation keys, e.g.  "greet.hello".
+
+ping:
+  response: "Pong! Latency: {latency}ms"
+  description: "Check the bot's latency"
+
+greet:
+  hello: "Hello, {name}!"
+  goodbye: "Goodbye, {name}!"
+
+errors:
+  not_found: "Could not find **{item}**."
+  no_permission: "You don't have permission to do that."
+  cooldown:
+    one:   "Please wait {seconds} second before using this command again."
+    other: "Please wait {seconds} seconds before using this command again."
+
+items:
+  count:
+    zero:  "No items"
+    one:   "{count} item"
+    other: "{count} items"
+
+# -------------------------------------------------------------------
+# ezcord-style "general" section:
+# Values here are available as {.key} inside the same file,
+# or set them globally via I18n(localizations=..., BotName="MyBot").
+# -------------------------------------------------------------------
+general:
+  support_server: "https://discord.gg/example"
+
+# -------------------------------------------------------------------
+# Command name / description / option translations
+# Used by localize_commands(bot.tree, localizations)
+# -------------------------------------------------------------------
+commands:
+  ping:
+    name: "ping"
+    description: "Check the bot's latency"
+
+  greet:
+    name: "greet"
+    description: "Send a greeting"
+    options:
+      name:
+        name: "name"
+        description: "The user to greet"
+
+  # Subcommand group example
+  admin:
+    description: "Admin commands"
+    ban:
+      description: "Ban a user"
+      options:
+        user:
+          name: "user"
+          description: "The user to ban"
+        reason:
+          name: "reason"
+          description: "Reason for the ban"

@@ -1,0 +1,43 @@
+discord-i18n
+Copyright (c) 2026 Nico4devv
+
+This product includes concepts, patterns, and logic inspired by or adapted
+from the following open-source projects:
+
+--------------------------------------------------------------------------------
+ezcord
+https://github.com/tibue99/ezcord
+Copyright (c) tibue99
+Licensed under the MIT License
+
+Inspired / adapted portions:
+  - Directory-based YAML/JSON locale loading (load_languages)
+  - Automatic expansion of the bare "en" locale key to "en-US" and "en-GB"
+  - The "general" section variable expansion ({.key} syntax)
+  - Locale fallback chain logic
+  - Missing-key handling modes ("key" / "empty" / "raise")
+  - Locale extraction from discord.Interaction / guild / user objects
+    (locale_from_interaction)
+  - check_missing_keys — inspired by I18N._check_localizations
+  - localize_commands — inspired by ezcord's localize_command helper
+
+  Source files:
+    https://github.com/tibue99/ezcord/blob/main/ezcord/i18n.py
+    https://github.com/tibue99/ezcord/blob/main/ezcord/internal/language/languages.py
+
+--------------------------------------------------------------------------------
+pycord-i18n
+https://github.com/Dorukyum/pycord-i18n
+Copyright (c) Dorukyum
+Licensed under the MIT License
+
+Inspired / adapted portions:
+  - Slash-command name / description / option localization approach
+    (localize_commands / _apply_locale)
+
+  Source file:
+    https://github.com/Dorukyum/pycord-i18n
+
+--------------------------------------------------------------------------------
+Full license texts for the above projects can be found at their respective
+GitHub repositories linked above.

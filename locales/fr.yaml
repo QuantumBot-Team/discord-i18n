@@ -1,0 +1,50 @@
+# locales/fr.yaml
+
+ping:
+  response: "Pong ! Latence : {latency}ms"
+  description: "Vérifier la latence du bot"
+
+greet:
+  hello: "Bonjour, {name} !"
+  goodbye: "Au revoir, {name} !"
+
+errors:
+  not_found: "Impossible de trouver **{item}**."
+  no_permission: "Vous n'avez pas la permission de faire cela."
+  cooldown:
+    one:   "Veuillez attendre {seconds} seconde avant de réutiliser cette commande."
+    other: "Veuillez attendre {seconds} secondes avant de réutiliser cette commande."
+
+items:
+  count:
+    zero:  "Aucun élément"
+    one:   "{count} élément"
+    other: "{count} éléments"
+
+general:
+  support_server: "https://discord.gg/example"
+
+commands:
+  ping:
+    name: "ping"
+    description: "Vérifier la latence du bot"
+
+  greet:
+    name: "saluer"
+    description: "Envoyer un message de bienvenue"
+    options:
+      name:
+        name: "nom"
+        description: "L’utilisateur à saluer"
+
+  admin:
+    description: "Commandes d’administration"
+    ban:
+      description: "Bannir un utilisateur"
+      options:
+        user:
+          name: "utilisateur"
+          description: "L’utilisateur à bannir"
+        reason:
+          name: "raison"
+          description: "Raison du bannissement"

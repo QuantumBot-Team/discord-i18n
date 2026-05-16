@@ -1,0 +1,25 @@
+{
+  "ping": {
+    "response": "Pong! Latenz: {latency}ms",
+    "description": "Latenz des Bots prüfen"
+  },
+  "greet": {
+    "hello": "Hallo, {name}!",
+    "goodbye": "Auf Wiedersehen, {name}!"
+  },
+  "errors": {
+    "not_found": "**{item}** wurde nicht gefunden.",
+    "no_permission": "Du hast keine Berechtigung, das zu tun.",
+    "cooldown": {
+      "one": "Bitte warte {seconds} Sekunde, bevor du diesen Befehl erneut verwendest.",
+      "other": "Bitte warte {seconds} Sekunden, bevor du diesen Befehl erneut verwendest."
+    }
+  },
+  "items": {
+    "count": {
+      "zero": "Keine Einträge",
+      "one": "{count} Eintrag",
+      "other": "{count} Einträge"
+    }
+  }
+}

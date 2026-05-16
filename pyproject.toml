@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "discord-i18n"
+version = "1.0.0"
+description = "Internationalization (i18n) library for discord.py bots"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["discord", "discord.py", "i18n", "l10n", "internationalization", "localization", "bot"]
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Internationalization",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []   # discord.py itself is NOT a hard dependency
+
+[project.optional-dependencies]
+yaml    = ["PyYAML>=6.0"]
+discord = ["discord.py>=2.0"]
+dev = [
+  "discord.py>=2.0",
+  "PyYAML>=6.0",
+  "pytest>=8.0",
+  "pytest-asyncio>=0.23",
+]
+
+[project.urls]
+Homepage     = "https://github.com/your-org/discord-i18n"
+Repository   = "https://github.com/your-org/discord-i18n"
+"Bug Tracker" = "https://github.com/your-org/discord-i18n/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/discord_i18n"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src/",
+  "locales/",
+  "tests/",
+  "README.md",
+  "LICENSE",
+  "NOTICE",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
