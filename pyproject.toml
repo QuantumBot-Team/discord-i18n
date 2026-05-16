@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "discord-i18n"
-version = "1.0.0"
+version = "1.0.3"
 description = "Internationalization (i18n) library for discord.py bots"
 readme = "README.md"
 license = { text = "MIT" }
@@ -38,9 +38,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage     = "https://github.com/your-org/discord-i18n"
-Repository   = "https://github.com/your-org/discord-i18n"
-"Bug Tracker" = "https://github.com/your-org/discord-i18n/issues"
+Homepage     = "https://github.com/QuantumBot-Team/discord-i18n"
+Repository   = "https://github.com/QuantumBot-Team/discord-i18n"
+"Bug Tracker" = "https://github.com/QuantumBot-Team/discord-i18n/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/discord_i18n"]

@@ -351,18 +351,3 @@ class MyBot(discord.Client):
 
 `localize_commands` sets `name_localizations` and `description_localizations` on every command / subcommand / option it finds in the `commands` block. The `default_locale` (default `"en-US"`) values are also applied directly to the command object.
 
----
-
-## Publishing to PyPI
-
-```bash
-pip install build twine
-python -m build
-twine upload dist/*
-```
-
----
-
-## License
-
-MIT

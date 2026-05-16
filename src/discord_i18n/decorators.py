@@ -9,14 +9,6 @@ licensed under the MIT License (Copyright © tibue99).
 
 Original source: https://github.com/tibue99/ezcord/blob/main/ezcord/i18n.py
 """
-------------------
-* ``locale_from_interaction`` – extract locale from an
-  :class:`discord.Interaction` (app commands / slash commands).
-* ``locale_from_ctx`` – extract locale from a
-  :class:`discord.ext.commands.Context` (prefix commands).
-* ``@use_locale`` – decorator that injects a bound ``Translator`` into a
-  slash-command callback as the ``t`` keyword argument.
-"""
 
 from __future__ import annotations
 
