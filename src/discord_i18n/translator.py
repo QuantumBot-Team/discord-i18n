@@ -277,8 +277,11 @@ class I18n:
         elif isinstance(value, int):
             formatted = f"{value:,}"
         else:
-            # float: strip trailing zeros after decimal point
+            # float: strip insignificant trailing zeros after decimal point
+            # (e.g. 1234.0 -> "1,234", 1.50 -> "1.5") to match the docstring
             formatted = f"{value:,}"
+            if "." in formatted:
+                formatted = formatted.rstrip("0").rstrip(".")
 
         if lang in period_thousands:
             # swap: ',' ↔ '.'
